@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className="min-h-screen p-10 bg-gray-100 text-black">
-        <div className="text-7xl">🧑‍🍳</div>
+        <div className="text-7xl">👨‍🎓👩‍🎓🫶🧑‍🍳👩‍🍳</div>
         <h1 className="text-5xl p-2 font-bold">Broke Bites</h1>
         <h2 className="text-xl p-2 font-normal">
           Random Ingredients, Tight Schedule? Let Broke Bites Craft Quick Recipes For The Hungry Scholar In You!🎓🍳

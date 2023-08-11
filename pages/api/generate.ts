@@ -24,13 +24,19 @@ const post = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const data = await response.json();
 
-  const recipes = data.choices[0].message.content
-    .split("\n")
-    .filter((line: string | any[]) => line.length > 0);
+  let recipes: string[] = [];
 
-  res.status(200).json({
-    recipes: [recipes[0], recipes[1], recipes[2]],
-  });
+  if (data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) {
+    const recipes = data.choices[0].message.content
+      .split("\n")
+      .filter((line: string | any[]) => line.length > 0);
+    res.status(200).json({
+      recipes: [recipes[0], recipes[1], recipes[2]],
+    });
+  } else {
+    console.error('Unexpected data structure', data);
+    res.status(500).json({ error: 'Unexpected data structure' });
+  }
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
