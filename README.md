@@ -1,48 +1,35 @@
-# Chef AI 🧑‍🍳
+# Broke Bites 🧑‍🍳
 
-Webapp that generates recipes based on ingredients and cooking time. Built with OpenAI API, Next.js, and Tailwind CSS.
+Oi, students! Short on cash but still want a banging meal? Enter Broke Bites - the web app that conjures up recipes with whatever you've got lying around and the precious few minutes you can spare between lectures. Powered by OpenAI API, Next.js, and Tailwind CSS. And remember, if I can teach grown chefs to not ruin a steak, I'm sure you can cook up something decent with this tool.
 
-The app is part of the _How to build an AI app_ workshop by [Elena Lape](https://twitter.com/elena_lape) presented at [Hack the Burgh 2023](https://hacktheburgh.com) 4-5 March 2023.
+The app was showcased in the blindingly brilliant workshop, "How to build an AI app," led by Elena Lape at the fantastic Hack the Burgh 2023 event on 4-5 March 2023.
 
-![App screenshot](chefai-screenshot.png)
+Put your eyes on this - ![App screenshot](chefai-screenshot.png)
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/download/) installed on your machine
-- [OpenAI account & API key](https://platform.openai.com/account/api-keys)
+You're going to need [Node.js](https://nodejs.org/en/download/). Just get it sorted on your machine.
+An [OpenAI account & API key](https://platform.openai.com/account/api-keys). It's not rocket science; just sign up.
 
 ## Built with
 
-- [Next.js](https://nextjs.org/) — a React framework for building static and server-rendered apps and websites
-- [Tailwind CSS](https://tailwindcss.com/) — a utility-first CSS framework (tldr; it lets you write CSS in shortcodes)
-- [OpenAI API](https://openai.com/) — an API that lets you use AI to generate text & images
+- [Next.js](https://nextjs.org/): Think of it as the unsung hero behind many great dishes — it's a bloody useful React framework.
+- [Tailwind CSS](https://tailwindcss.com/): Makes your CSS life a lot less miserable with its shortcodes.
+- [OpenAI API](https://openai.com/): The magic wand that spins words and pictures out of thin air. Absolutely stunning!
 
 ## Running locally
 
-1. Clone the repo
-
-```bash
+1. Stop mucking about! Clone the repo:
 git clone
-```
 
-2. Install dependencies
-
-```bash
+2. Whip out the ingredients - Install those dependencies:
 npm install
-```
 
-3. Create an `.env` file in the root directory and add your OpenAI API key, which you can get from [here](https://platform.openai.com/account/api-keys).
-
-```bash
+3. Right, you're going to need to set up your secret sauce. Create an .env file in the root directory and slap in your OpenAI API key, which, if you were paying attention earlier, you'd know to grab from here.
 // .env
 OPENAI_API_KEY=sk-xxxxxxx
-```
 
-4. Run the app
-
-```bash
+4.Light the stoves! Let's get this app running:
 npm run dev
-```
 
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-# broke-bites
+Check out your masterpiece at http://localhost:3000. And trust me, if it doesn't work, it's probably something you did, not the app!
